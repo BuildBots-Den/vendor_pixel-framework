@@ -76,6 +76,13 @@
         android:title="@string/alarm_volume_option_title"
         settings:controller="com.android.settings.notification.AlarmVolumePreferenceController" />
 
+    <!-- Link ringtone and notification volumes -->
+    <SwitchPreference
+        android:key="volume_link_notification"
+        android:title="@string/volume_link_notification_title"
+        android:order="-138"
+        settings:controller="com.android.settings.notification.LinkedVolumesPreferenceController"/>
+
     <lineageos.preference.LineageSystemSettingSwitchPreference
         android:key="increasing_ring"
         android:title="@string/increasing_ring_volume_option_title"
